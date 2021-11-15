@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W-EARN</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="login.js"></script>
+</head>
+<body>
+    <h1 class="name"><i class="fas fa-clock"></i> WEMS</h1>
+
+    <div style="background-image: url('image/clock.jpg;');"></div>
+    <div class="loginPage">
+        <div class="form">
+            <form class="registerForm" action = "registration.php" method="post">
+                <input type="text" placeholder="Username" id="regUser" name="createUser">
+                <input type="password" placeholder="Password" id="regPass" name="createPass">
+                <input type="text" placeholder="Email Address" name = "createEmail">
+                <button type="submit" name="submit">Create</button>
+                <p class="message">Already Registered? 
+                    <a href="#">Login</a>
+                </p>
+                <div class="login-icon">
+                    <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+            </form>
+            
+            <form class="loginForm" action="validation.php" method="post">
+                <input type="text" placeholder="Username" id="username" name="createUser">
+                <input type="password" placeholder="Password" id="password" name="createPass">
+                <button type="submit" name="submit">Login</button>
+                <p class="message">Not Registered?
+                    <a href="#">Register</a>
+                </p>
+                <div class="login-icon">
+                <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js
+    "></script>
+
+    <script>
+        $('.message a').click(function(){
+            $('form').animate({height:"toggle",opacity: "toggle"},"slow");
+        });
+
+    </script>
+     <script src="https://kit.fontawesome.com/ef88416dbc.js" crossorigin="anonymous"></script>
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+
+</body>
+</html>

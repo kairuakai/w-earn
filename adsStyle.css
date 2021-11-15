@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(image/coffee.jpg);
+    background-size: cover;
+}
+.upper i{
+    color: white;
+    position: relative;
+    right: 150px;
+    font-size: 24px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    height: 150px;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    position: relative;
+    color: white;
+    text-align: center;
+    left: 320px;
+    font-size: 33px;
+    top: 20px;
+}
+.mainBack{
+    padding: 2px;
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-size: 24px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    position: relative;
+    right: 140px;
+}
+video{
+    display: inline;
+    padding: 20px;
+    width: 47%;
+    border-radius: 50px;
+}
+.adsPoints{
+    color: white;
+    position: relative;
+    left: 110px;
+    top: 13px;
+    display: flex;
+    width: 18%;
+    /* justify-content: space-around; */
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 10px;
+}
+.adsPoints i{
+    list-style: none;
+    display: inline;
+    color: white;
+    padding: 10px;
+}
+.adsPoints p{
+    position: relative;
+}
+#adsBtn{
+    position: relative;
+    top: 20px;
+    left: 660px;
+    text-align: center;
+    width: 250px;
+    padding: 20px;
+    font-size: 35px;
+    background-color: rgba(138, 126, 105, 0.7);
+    color: #15f4ee;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    border: 10px solid #15f4ee;
+    letter-spacing: 5px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 1.5s;
+}
+#adsBtn:hover{
+    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+    text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
+}
